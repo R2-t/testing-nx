@@ -1,0 +1,187 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Open Sans, sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --primary-dynata-brighter: #f4f7fb;
+  --primary-dynata-bright: #e2e9f4;
+  --primary-dynata-lighter: #bacae1;
+  --primary-dynata-light: #6787b7;
+  --primary-dynata-normal: #1e528f;
+  --primary-dynata-dark: #1b365d;
+
+  --primary-blue-brighter: #f2f6fc;
+  --primary-blue-bright: #dae3f7;
+  --primary-blue-light: #aec1ea;
+  --primary-blue-normal: #577dd3;
+  --primary-blue-dark: #475fc2;
+  --primary-blue-deep: #243889;
+
+  --secondary-blue-brighter: #edf8fc;
+  --secondary-blue-bright: #cdeaf9;
+  --secondary-blue-light: #95cfec;
+  --secondary-blue-normal: #3ea8dd;
+  --secondary-blue-dark: #217ab5;
+  --secondary-blue-deep: #0b508c;
+
+  --secondary-magenta-brighter: #fceef6;
+  --secondary-magenta-bright: #fbd0e7;
+  --secondary-magenta-light: #f893ca;
+  --secondary-magenta-normal: #d0368b;
+  --secondary-magenta-dark: #a8276e;
+  --secondary-magenta-deep: #7e0447;
+
+  --secondary-orange-brighter: #fff2f0;
+  --secondary-orange-bright: #ffd7d1;
+  --secondary-orange-light: #ffa799;
+  --secondary-orange-normal: #f5735f;
+  --secondary-orange-dark: #ec4a31;
+  --secondary-orange-deep: #aa2915;
+
+  --danger-brighter: #fff0f2;
+  --danger-bright: #ffccd3;
+  --danger-light: #ff8f9d;
+  --danger-normal: #e94458;
+  --danger-dark: #c61025;
+  --danger-deep: #890212;
+
+  --warning-brighter: #fff6f0;
+  --warning-bright: #ffe2cc;
+  --warning-light: #fdcaa3;
+  --warning-normal: #fca360;
+  --warning-dark: #d46b2f;
+  --warning-deep: #ab3a0a;
+
+  --info-brighter: #fefaf0;
+  --info-bright: #fef1d2;
+  --info-light: #fce3ab;
+  --info-normal: #f9cc67;
+  --info-dark: #d19834;
+  --info-deep: #a8660f;
+
+  --positive-brighter: #f7fcfb;
+  --positive-bright: #d5f1e9;
+  --positive-light: #9ddccb;
+  --positive-normal: #52c1a3;
+  --positive-dark: #289982;
+  --positive-deep: #0b7063;
+
+  --gray-1: #ffffff;
+  --gray-2: #fafafa;
+  --gray-3: #f5f5f5;
+  --gray-4: #f0f0f0;
+  --gray-5: #e3e3e3;
+  --gray-6: #c6c6c6;
+  --gray-7: #aaaaaa;
+  --gray-8: #8e8e8e;
+  --gray-9: #717171;
+  --gray-10: #555555;
+  --gray-11: #393939;
+  --gray-12: #1c1c1c;
+  --gray-13: #000000;
+}
+
+/* Text Categories */
+
+.title {
+  font-family: "Open Sans", sans-serif;
+}
+
+.headline {
+  font-family: "Montserrat", sans-serif;
+}
+
+.body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.metric {
+  font-family: "Bebas Neue", cursive;
+  @apply font-bold;
+}
+
+/* Font Weights */
+
+.light {
+  @apply font-light;
+}
+
+.regular {
+  @apply font-normal;
+}
+.semibold {
+  @apply font-semibold;
+}
+.bold {
+  @apply font-bold;
+}
+.extrabold {
+  @apply font-extrabold;
+}
+.all-caps {
+  @apply uppercase;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
